@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeueRoman.otf') format('opentype'); 
+  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue' sans-serif;
+   
+}
+
+#header-container{
+    background-color: #0A22F4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 91px;
+    padding:0 10%;
+
+} 
+
+.header-right {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+    flex-grow: 1;
+}
+
+
+
+#header-container ul{
+
+	display: flex;
+
+	list-style: none;
+	gap: 30px;
+
+}
+#header-container ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	text-align: left;
+	line-height: 18px;
+	font-family: 'Helvetica Neue', sans-serif;
+
+
+}
+.active{
+	border-bottom: 1px solid white;
+
+
+}
+
+.contact{
+	margin-left: 40px;
+	background-color: white;
+	color: #171717;
+	border: none;
+	
+	cursor: pointer;
+	padding: 8px 25px;
+	
+	text-align: left;
+
+	font: normal normal bold 10px/12px Helvetica Neue;
+	font-weight: 900;
+	text-transform: uppercase;
+
+}
+
+#section-container{
+	padding: 60px 10%;
+
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-title{
+
+}
+
+.dots{
+	display: flex;
+	align-self: center;
+	gap: 8px;
+}
+
+.dot{
+	width: 8px;
+    height: 8px;
+    background-color: #F9F9F9; 
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.dot.active{
+	background-color: #0A22F4;
+	width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.cards{
+
+	display: flex;
+	justify-content: space-between;
+
+    gap: 40px;
+
+}
+
+.card{
+	flex: 1;
+	display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card h3{
+	text-align: left;
+    color: #171717;
+    font: normal normal bold 22px/26px Helvetica Neue;
+    font-weight: 700;
+}
+
+ .card p{
+ 	
+    color: #171717;
+    line-height: 26px;
+    font-size: 15px;
+ }
+
+
+
+
+.icon{
+		align-self: flex-start;
+		width: 70px;
+        height: 70px;
+}
+
+.icon.grey{
+	background-color:#F9F9F9 ;
+}
+
+.icon.blue{
+	background-color: #0A22F4;
+}
